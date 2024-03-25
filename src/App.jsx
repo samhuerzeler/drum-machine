@@ -19,8 +19,8 @@ function App() {
           <DrumPad key={pad.id} pad={pad} setAudioDisplayName={setAudioDisplayName} powerOn={powerOn} volume={volume} />
         ))}
 
-        <PowerControl />
-        
+        <PowerControl powerOn={powerOn} setPowerOn={setPowerOn} setAudioDisplayName={setAudioDisplayName} />
+
         <VolumeSlider setVolume={setVolume} />
     </main>
   )
