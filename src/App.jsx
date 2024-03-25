@@ -5,6 +5,7 @@ import DrumPad from "./components/DrumPad";
 import PowerControl from "./components/PowerControl";
 import VolumeSlider from "./components/VolumeSlider";
 import './App.css'
+import VolumeDisplay from "./components/VolumeDisplay";
 
 function App() {
   const [volume, setVolume] = useState(50);
@@ -13,15 +14,25 @@ function App() {
 
   return (
     <main>
-        <AudioDisplay />
+      <div id="drum-machine">
 
-        {AudioSource.map((pad) => (
-          <DrumPad key={pad.id} pad={pad} setAudioDisplayName={setAudioDisplayName} powerOn={powerOn} volume={volume} />
-        ))}
+        <div className="pads">
+          {AudioSource.map((pad) => (
+            <DrumPad key={pad.id} pad={pad} setAudioDisplayName={setAudioDisplayName} powerOn={powerOn} volume={volume} />
+          ))}
+        </div>
 
-        <PowerControl powerOn={powerOn} setPowerOn={setPowerOn} setAudioDisplayName={setAudioDisplayName} />
+        <div className="displays">
+          <VolumeDisplay volume={volume} powerOn={powerOn} />
+          <AudioDisplay audioDisplayName={audioDisplayName} powerOn={powerOn} />
+        </div>
 
-        <VolumeSlider setVolume={setVolume} />
+        <div className="controllers">
+          <PowerControl powerOn={powerOn} setPowerOn={setPowerOn} setAudioDisplayName={setAudioDisplayName} />
+          <VolumeSlider setVolume={setVolume} />
+        </div>
+        
+      </div>
     </main>
   )
 }

@@ -1,0 +1,108 @@
+.s-sgm-container {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    background: #000;
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+  .s-sgm-container::after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    height: 3px;
+    bottom: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.6);
+  }
+  
+  .display-container {
+    position: relative;
+    width: 41px;
+    height: 69px;
+  }
+  
+  .display-container .segment-x,
+  .display-container .segment-y {
+    position: absolute;
+  }
+  
+  .display-container .segment-border {
+    display: block;
+    position: absolute;
+  }
+  
+  .display-container .segment-x {
+    width: 18px;
+    left: 6.5px;
+    border-bottom: 5px solid #ff0000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+  
+  .display-container .segment-x .segment-border {
+    top: 5px;
+    left: -5px;
+    right: -5px;
+    border-top: 5px solid #ff0000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+  
+  .display-container .segment-y {
+    height: 18px;
+    width: 0;
+    border-right: 5px solid #ff0000;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+  
+  .display-container .segment-y .segment-border {
+    position: relative;
+    left: 5px;
+    height: 18px;
+    margin-top: -5px;
+    border-left: 5px solid #ff0000;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+  
+  .display-container .segment-a {
+    top: 0;
+  }
+  
+  .display-container .segment-b {
+    top: 6px;
+    left: 31px;
+  }
+  
+  .display-container .segment-c {
+    top: 35px;
+    left: 31px;
+  }
+  
+  .display-container .segment-d {
+    top: 59px;
+  }
+  
+  .display-container .segment-e {
+    top: 35px;
+    left: 0px;
+  }
+  
+  .display-container .segment-f {
+    top: 6px;
+    left: 0px;
+  }
+  
+  .display-container .segment-g {
+    top: 30px;
+  }
+  
+  .display__label {
+    text-align: center;
+  }
