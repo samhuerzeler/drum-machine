@@ -8,7 +8,7 @@ import closedhh from "../assets/sounds/Cev_H2.mp3";
 import kicknhat from "../assets/sounds/Kick_n_Hat.mp3";
 import kick from "../assets/sounds/RP4_KICK_1.mp3";
 
-const Source = [
+const AudioSource = [
     {
         id: "heater1",
         name: 'Heater-1',
@@ -72,4 +72,6 @@ const Source = [
         key: 'C',
         keyCode: 67
     }
-]
+];
+
+export default AudioSource;

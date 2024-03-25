@@ -14,7 +14,11 @@ function App() {
   return (
     <main>
         <AudioDisplay />
-        <DrumPad />
+
+        {AudioSource.map((pad) => (
+          <DrumPad key={pad.id} pad={pad} setAudioDisplayName={setAudioDisplayName} powerOn={powerOn} volume={volume} />
+        ))}
+        
         <PowerControl />
         <VolumeSlider />
     </main>
