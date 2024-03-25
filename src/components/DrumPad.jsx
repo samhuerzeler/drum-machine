@@ -1,5 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
+import './DrumPad.css';
+
+DrumPad.propTypes = {
+    pad: PropTypes.instanceOf(Object).isRequired,
+    setAudioDisplayName: PropTypes.func.isRequired,
+    powerOn: PropTypes.bool.isRequired,
+    volume: PropTypes.number.isRequired,
+};
 
 function DrumPad(props) {
     const {
@@ -62,14 +70,5 @@ function DrumPad(props) {
         </div>
     );
 }
-
-
-
-DrumPad.propTypes = {
-    pad: PropTypes.instanceOf(Object).isRequired,
-    setAudioDisplayName: PropTypes.func.isRequired,
-    powerOn: PropTypes.bool.isRequired,
-    volume: PropTypes.number.isRequired,
-};
 
 export default DrumPad;
