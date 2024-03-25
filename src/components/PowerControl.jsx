@@ -29,9 +29,10 @@ function PowerControl(props) {
 
   return (
     <div className="controllers__on-off">
-      <div className={ledClass} />
-      <div className="vl" />
       <div className="pad">
+        <label className="pad__label--bottom" htmlFor="on-off">
+         Power Control
+        </label>
         <button
           id="on-off"
           className={buttonClass}
@@ -39,9 +40,6 @@ function PowerControl(props) {
           type="button"
           onClick={() => handlePowerButtonClick()}
         />
-        <label className="pad__label--bottom" htmlFor="on-off">
-         PLAY/STOP
-        </label>
       </div>
     </div>
   );

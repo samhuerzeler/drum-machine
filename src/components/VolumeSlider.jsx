@@ -65,7 +65,7 @@ function VolumeSlider(props) {
     return (
         <div className="controllers__volume">
             <label className="volume__label">
-                VOLUME
+                Volume Control
             </label>
             <div className="volume__slider" ref={sliderRef}>
                 <div

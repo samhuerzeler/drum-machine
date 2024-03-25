@@ -3,44 +3,24 @@ header {
   display: flex;
 }
 
-.header__lines__left,
-.header__lines__right {
-  border-top: 2px solid #ee6d2d;
-  border-bottom: 2px solid #ee6d2d;
-  width: 60%;
-  height: 1.6rem;
-  align-self: center;
-}
-
-.header__logo {
-  width: 30%;
-}
-
-.header__lines__left {
-  width: 10%;
-}
-
 main {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
-  gap: 3rem;
+  margin-top: 1rem;
+  gap: 1rem;
 }
 
 #drum-machine {
-  display: flex;
+  display: grid;
   align-items: center;
   gap: 3rem;
-  border: 2px solid #ee6d2d;
-  border-radius: 8px;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .pads {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  column-gap: 0.5rem;
   row-gap: 1rem;
 }
 
@@ -52,12 +32,10 @@ label {
 .displays {
   display: flex;
   flex-direction: column;
-  gap: 30px;
   align-items: center;
 }
 
 .controllers {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }

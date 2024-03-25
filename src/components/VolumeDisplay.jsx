@@ -28,6 +28,7 @@ function VolumeDisplay(props) {
 
   return (
     <div className="display__label">
+    <label>Volume</label>
       <div className="s-sgm-container">
         <div className={display1Class}>
           <div className="segment-x segment-a"><span className="segment-border" /></div>
@@ -57,8 +58,6 @@ function VolumeDisplay(props) {
           <div className="segment-x segment-g"><span className="segment-border" /></div>
         </div>
       </div>
-      {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-      <label>VOLUME</label>
     </div>
   );
 }

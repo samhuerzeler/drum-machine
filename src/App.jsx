@@ -31,7 +31,7 @@ function App() {
           <PowerControl powerOn={powerOn} setPowerOn={setPowerOn} setAudioDisplayName={setAudioDisplayName} />
           <VolumeSlider setVolume={setVolume} />
         </div>
-        
+
       </div>
     </main>
   )

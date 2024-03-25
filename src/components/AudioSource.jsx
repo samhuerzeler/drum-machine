@@ -11,28 +11,28 @@ import kick from "../assets/sounds/RP4_KICK_1.mp3";
 const AudioSource = [
     {
         id: "heater1",
-        name: 'Heater-1',
+        name: 'Heater1',
         audio: heater1,
         key: 'Q',
         keyCode: 81
     },
     {
         id: "heater2",
-        name: 'Heater-2',
+        name: 'Heater2',
         audio: heater2,
         key: 'W',
         keyCode: 87
     },
     {
         id: "heater3",
-        name: 'Heater-3',
+        name: 'Heater3',
         audio: heater3,
         key: 'E',
         keyCode: 69
     },
     {
         id: "heater4",
-        name: 'Heater-4',
+        name: 'Heater4',
         audio: heater4,
         key: 'A',
         keyCode: 65
@@ -46,21 +46,21 @@ const AudioSource = [
     },
     {
         id: "openhh",
-        name: 'Open HH',
+        name: 'OpenHH',
         audio: openhh,
         key: 'D',
         keyCode: 68
     },
     {
         id: "closedhh",
-        name: 'Closed HH',
+        name: 'ClosedHH',
         audio: closedhh,
-        key: 'Y',
-        keyCode: 89
+        key: 'Z',
+        keyCode: 90
     },
     {
         id: "kicknhat",
-        name: 'Kick n Hat',
+        name: 'KickNHat',
         audio: kicknhat,
         key: 'X',
         keyCode: 88
